@@ -1,0 +1,156 @@
+/* ============================================================
+   M_SEQ サポートページ 共通スタイル
+   アプリと同じ色・ドット絵の枠に合わせてある。
+   ============================================================ */
+
+:root {
+  --cream:          #f5edd4;
+  --cream-dark:     #e4d8b8;
+  --burgundy:       #6e0a0f;
+  --burgundy-dark:  #330508;
+  --green:          #2e7a2b;
+  --blue:           #084f6e;
+  --dot:            3px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px 16px 64px;
+  background: var(--cream);
+  color: var(--burgundy-dark);
+  font-family: ui-monospace, "SF Mono", "Menlo", "Consolas",
+               "MS Gothic", monospace;
+  font-size: 15px;
+  line-height: 1.9;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* --- ドット風の二重枠 ------------------------------------ */
+.frame {
+  background: var(--cream);
+  border: var(--dot) solid var(--burgundy);
+  box-shadow:
+    0 0 0 var(--dot) var(--cream),
+    0 0 0 calc(var(--dot) * 2) var(--burgundy);
+  padding: 24px 20px;
+  margin: 0 var(--dot) 40px;
+}
+
+/* --- 見出し ---------------------------------------------- */
+h1 {
+  font-size: 26px;
+  letter-spacing: 0.06em;
+  margin: 0 0 4px;
+  color: var(--burgundy);
+}
+
+.subtitle {
+  margin: 0 0 28px;
+  font-size: 13px;
+  color: var(--blue);
+  letter-spacing: 0.08em;
+}
+
+h2 {
+  font-size: 17px;
+  margin: 36px 0 12px;
+  padding: 6px 10px;
+  color: var(--cream);
+  background: var(--burgundy);
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 24px 0 6px;
+  color: var(--blue);
+}
+
+h2:first-of-type { margin-top: 8px; }
+
+/* --- 本文 ------------------------------------------------ */
+p  { margin: 0 0 14px; }
+ul { margin: 0 0 14px; padding-left: 1.4em; }
+li { margin-bottom: 6px; }
+
+strong { color: var(--burgundy); }
+
+a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--burgundy); }
+
+code {
+  background: var(--cream-dark);
+  padding: 2px 6px;
+  font-size: 13px;
+}
+
+/* --- 「収集していません」を目立たせる箱 ------------------- */
+.badge {
+  border: var(--dot) solid var(--green);
+  padding: 14px 16px;
+  margin: 0 0 22px;
+  background: var(--cream-dark);
+}
+.badge strong { color: var(--green); }
+
+/* --- 表 -------------------------------------------------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 0 18px;
+  font-size: 14px;
+}
+th, td {
+  border: 2px solid var(--burgundy);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--burgundy);
+  color: var(--cream);
+  white-space: nowrap;
+}
+
+/* --- 英語パート ------------------------------------------ */
+.en {
+  margin-top: 48px;
+  padding-top: 8px;
+  border-top: var(--dot) dashed var(--burgundy);
+}
+.en h2 { background: var(--blue); }
+.en h3 { color: var(--burgundy); }
+
+/* --- ページ下部 ------------------------------------------ */
+.nav {
+  margin: 0 var(--dot) 24px;
+  font-size: 14px;
+}
+.nav a { margin-right: 20px; }
+
+footer {
+  margin: 0 var(--dot);
+  font-size: 12px;
+  color: var(--blue);
+  letter-spacing: 0.05em;
+}
+
+/* --- 狭い画面 -------------------------------------------- */
+@media (max-width: 480px) {
+  body { font-size: 14px; padding: 16px 10px 48px; }
+  h1 { font-size: 21px; }
+  .frame { padding: 18px 14px; }
+  table { font-size: 13px; }
+  th, td { padding: 6px 7px; }
+}

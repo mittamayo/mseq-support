@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M_SEQ サポート / Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="frame">
+    <h1>M_SEQ</h1>
+    <p class="subtitle">8bit SEQ &mdash; サポート / Support</p>
+
+    <h2>このアプリについて</h2>
+    <p>
+      <strong>M_SEQ</strong> は、指1本で演奏して、そのまま録音できる
+      8bit サウンドのシーケンサーです。
+      画面下の XY パッドを指でなぞると音が鳴り、
+      そのまま繰り返し（ループ）として記録されます。
+    </p>
+    <p>
+      音は昔の家庭用ゲーム機と同じ考え方で、その場で計算して作っています。
+      録音した音のファイルは使っていません。
+    </p>
+
+    <h2>今後の予定</h2>
+    <p>
+      M_SEQ は、<strong>音源を足していけるシーケンサー</strong>として作っています。
+      演奏のしかた（XY パッド・録音・ループ）は共通で、
+      鳴らす音だけを差し替えていく形です。
+    </p>
+    <p>
+      今回公開した <strong>8bit SEQ</strong> は、その最初の音源です。
+      今後、別の音源をアプリ内の追加購入として順次加えていく予定です。
+    </p>
+    <table>
+      <tr><th>検討中の音源</th><td>マレット系、アシッド系 など</td></tr>
+      <tr><th>購入方法</th><td>すべて App Store 経由</td></tr>
+      <tr><th>時期</th><td>未定</td></tr>
+    </table>
+    <div class="badge">
+      <strong>8bit SEQ は、今後も無料のままです。</strong><br>
+      いま使えている機能が、あとから有料になることは絶対にありません。
+    </div>
+
+    <h2>動作環境</h2>
+    <table>
+      <tr><th>対応機種</th><td>iPhone</td></tr>
+      <tr><th>iOS</th><td>iOS 17 以降</td></tr>
+      <tr><th>画面の向き</th><td>縦向きのみ</td></tr>
+      <tr><th>通信</th><td>使いません（機内モードでも動きます）</td></tr>
+    </table>
+
+    <h2>基本の使い方</h2>
+
+    <h3>1. 音を出す</h3>
+    <p>
+      画面下の大きな四角（XY パッド）を指でなぞってください。
+    </p>
+    <ul>
+      <li><strong>左右</strong> &hellip; 音の高さ（左が低く、右が高い。左端から右端で2オクターブ）</li>
+      <li><strong>上下</strong> &hellip; 鳴らし方（GATE＝連打 / ARP＝疑似和音 / VIB＝揺れ）</li>
+    </ul>
+
+    <h3>2. 録音する</h3>
+    <ul>
+      <li><strong>●</strong> を押してから、パッドをなぞる</li>
+      <li>指を離すと、そこまでが1回ぶんの録音になります</li>
+      <li>もう一度なぞると、上から重ねて録音できます（オーバーダブ）</li>
+    </ul>
+
+    <h3>3. ボタン</h3>
+    <table>
+      <tr><th>▶ / ■</th><td>再生 / 停止。押すと必ず先頭から始まります</td></tr>
+      <tr><th>●</th><td>録音の入り切り</td></tr>
+      <tr><th>↺</th><td>ひとつ前に戻す（20回まで）</td></tr>
+      <tr><th>TC</th><td>選んでいる1本のトラックの録音を消す</td></tr>
+      <tr><th>AC</th><td>4本すべての録音を消す</td></tr>
+      <tr><th>♪=</th><td>速さ（BPM）。上下になぞって変えます</td></tr>
+    </table>
+
+    <h3>4. トラック</h3>
+    <p>
+      TRK1・TRK2・TRK3・DRUM の4本があります。
+      名前の部分を押すと、そのトラックに切り替わります。
+    </p>
+    <p>
+      各項目は<strong>タップで次へ</strong>、
+      <strong>上下になぞっても</strong>変わります。
+      音量つまみは、上へなぞると大きく、下へなぞると小さくなります。
+      <strong>つまみをダブルタップすると 80 に戻ります。</strong>
+    </p>
+
+    <h2>よくある質問</h2>
+
+    <h3>作った曲は保存できますか？</h3>
+    <p>
+      <strong>いまのバージョンでは保存できません。</strong>
+      アプリを閉じると消えます。
+      その場で作って、その場で演奏するための道具として作っています。
+    </p>
+
+    <h3>指を置いてから音が出るまで、少し遅れます</h3>
+    <p>
+      <strong>これは仕様です。</strong>
+      すべての音が拍にきっちり合うように、
+      いちばん近い16分音符の区切りまで待ってから鳴らしています。
+      待ち時間は最大で16分音符1つぶん（BPM 120 のとき約0.13秒）です。
+    </p>
+    <p>
+      速さ（BPM）を上げると、待ち時間も短くなります。
+    </p>
+
+    <h3>音が出ません</h3>
+    <ul>
+      <li>本体の<strong>消音スイッチ</strong>が入っていないか確認してください</li>
+      <li>音量を上げてください</li>
+      <li>トラックの <strong>M</strong>（消音）が入っていないか確認してください</li>
+      <li>どこかのトラックで <strong>S</strong>（独奏）が入っていると、他は鳴りません</li>
+    </ul>
+
+    <h3>DRUM のパッドが他と違います</h3>
+    <p>
+      DRUM だけは指の位置が「どう叩くか」を決めます。
+      <strong>右へ行くほど細かく</strong>、<strong>上へ行くほど楽器が増えます</strong>。
+      左下はバスドラムだけ、右上はにぎやかな演奏になります。
+    </p>
+
+    <h3>不具合を見つけました / 要望があります</h3>
+    <p>
+      下の連絡先までメールをください。
+      機種名と iOS のバージョン、
+      どういう操作をしたときに起きたかを書いていただけると助かります。
+    </p>
+
+    <h2>お問い合わせ</h2>
+    <p>
+      <a href="mailto:ryohta.m27@gmail.com">ryohta.m27@gmail.com</a>
+    </p>
+    <p>
+      個人で開発しています。返信までに数日いただくことがあります。
+    </p>
+
+    <!-- ============================================== -->
+    <!-- English                                        -->
+    <!-- ============================================== -->
+    <div class="en">
+      <h2>About this app (English)</h2>
+      <p>
+        <strong>M_SEQ</strong> is an 8-bit style performance sequencer.
+        Drag one finger across the XY pad to play, and your performance is
+        recorded as a loop. All sound is synthesized in real time &mdash;
+        no audio files are used.
+      </p>
+
+      <h3>Roadmap</h3>
+      <p>
+        M_SEQ is built as a sequencer that <strong>grows by adding sound
+        engines</strong>. The way you play &mdash; XY pad, recording,
+        looping &mdash; stays the same; only the sound changes.
+      </p>
+      <p>
+        <strong>8bit SEQ</strong> is the first engine. Additional engines
+        (mallet, acid, and others under consideration) are planned as
+        in-app purchases through the App Store. No release date yet.
+      </p>
+      <div class="badge">
+        <strong>8bit SEQ will always remain free.</strong><br>
+        Features that work today will never be moved behind a purchase.
+      </div>
+
+      <h3>Requirements</h3>
+      <ul>
+        <li>iPhone, iOS 17 or later</li>
+        <li>Portrait orientation only</li>
+        <li>No network connection required</li>
+      </ul>
+
+      <h3>Basics</h3>
+      <ul>
+        <li><strong>XY pad</strong> &mdash; horizontal: pitch (two octaves),
+            vertical: articulation (GATE / ARP / VIB)</li>
+        <li><strong>&#9679;</strong> &mdash; arm recording, then drag the pad.
+            Drag again to overdub.</li>
+        <li><strong>&#9654; / &#9632;</strong> &mdash; play / stop.
+            Playback always starts from the top of the loop.</li>
+        <li><strong>&#8634;</strong> &mdash; undo (up to 20 steps)</li>
+        <li><strong>TC</strong> &mdash; clear the selected track</li>
+        <li><strong>AC</strong> &mdash; clear all four tracks</li>
+      </ul>
+
+      <h3>FAQ</h3>
+      <p>
+        <strong>Can I save my songs?</strong><br>
+        Not in this version. Everything is cleared when the app closes.
+      </p>
+      <p>
+        <strong>There is a short delay before I hear a note.</strong><br>
+        This is intentional. Every note starts exactly on a 1/16 note
+        boundary so that what you hear matches what is recorded.
+        The wait is at most one 1/16 note (about 0.13 s at 120 BPM).
+      </p>
+      <p>
+        <strong>No sound.</strong><br>
+        Check the silent switch, the volume, the per-track
+        <strong>M</strong> (mute), and whether any track has
+        <strong>S</strong> (solo) enabled.
+      </p>
+
+      <h3>Contact</h3>
+      <p>
+        <a href="mailto:ryohta.m27@gmail.com">ryohta.m27@gmail.com</a><br>
+        This app is made by an individual developer; replies may take a few days.
+      </p>
+    </div>
+  </div>
+
+  <div class="nav">
+    <a href="privacy.html">プライバシーポリシー / Privacy Policy</a>
+  </div>
+
+  <footer>
+    M_SEQ &mdash; 8bit SEQ &nbsp;|&nbsp; ver 1.0
+  </footer>
+
+</div>
+</body>
+</html>
